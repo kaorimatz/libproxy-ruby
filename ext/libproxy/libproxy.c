@@ -1,6 +1,5 @@
 #include "libproxy.h"
 
-VALUE rb_mLibproxy;
 VALUE rb_eLibproxyError;
 
 static void
@@ -86,10 +85,12 @@ rb_proxy_factory_proxies(VALUE self, VALUE url)
 void
 Init_libproxy(void)
 {
+    VALUE rb_mLibproxy, rb_cProxyFactory;
+
     rb_mLibproxy = rb_define_module("Libproxy");
     rb_eLibproxyError = rb_define_class_under(rb_mLibproxy, "Error", rb_eStandardError);
 
-    VALUE rb_cProxyFactory = rb_define_class_under(rb_mLibproxy, "ProxyFactory", rb_cObject);
+    rb_cProxyFactory = rb_define_class_under(rb_mLibproxy, "ProxyFactory", rb_cObject);
     rb_define_alloc_func(rb_cProxyFactory, rb_proxy_factory_s_allocate);
     rb_define_method(rb_cProxyFactory, "initialize", rb_proxy_factory_initialize, 0);
     rb_define_method(rb_cProxyFactory, "proxies", rb_proxy_factory_proxies, 1);
