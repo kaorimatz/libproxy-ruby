@@ -1,2 +1,2 @@
 require 'libproxy/version'
-require 'libproxy/libproxy'
+require 'libproxy/libproxy_ext'

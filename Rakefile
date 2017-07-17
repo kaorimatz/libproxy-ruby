@@ -7,7 +7,8 @@ require 'rake/extensiontask'
 
 task build: :compile
 
-Rake::ExtensionTask.new('libproxy') do |ext|
+Rake::ExtensionTask.new('libproxy_ext') do |ext|
+  ext.ext_dir = 'ext/libproxy'
   ext.lib_dir = 'lib/libproxy'
 end
 

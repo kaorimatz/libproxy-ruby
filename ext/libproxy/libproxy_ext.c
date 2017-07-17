@@ -1,4 +1,4 @@
-#include "libproxy.h"
+#include "libproxy_ext.h"
 
 VALUE rb_eLibproxyError;
 
@@ -83,7 +83,7 @@ rb_proxy_factory_proxies(VALUE self, VALUE url)
 }
 
 void
-Init_libproxy(void)
+Init_libproxy_ext(void)
 {
     VALUE rb_mLibproxy, rb_cProxyFactory;
 
