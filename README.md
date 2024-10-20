@@ -1,7 +1,6 @@
 # libproxy-ruby
 
 [![Gem](https://img.shields.io/gem/v/libproxy.svg?style=flat-square)](https://rubygems.org/gems/libproxy)
-[![Travis](https://img.shields.io/travis/kaorimatz/libproxy-ruby.svg?style=flat-square)](https://travis-ci.org/kaorimatz/libproxy-ruby)
 [![Coveralls](https://img.shields.io/coveralls/kaorimatz/libproxy-ruby.svg?style=flat-square)](https://coveralls.io/github/kaorimatz/libproxy-ruby)
 [![Gemnasium](https://img.shields.io/gemnasium/kaorimatz/libproxy-ruby.svg?style=flat-square)](https://gemnasium.com/kaorimatz/libproxy-ruby)
 
