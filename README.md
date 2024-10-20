@@ -1,8 +1,5 @@
 # libproxy-ruby
 
-[![Gem](https://img.shields.io/gem/v/libproxy.svg?style=flat-square)](https://rubygems.org/gems/libproxy)
-[![Gemnasium](https://img.shields.io/gemnasium/kaorimatz/libproxy-ruby.svg?style=flat-square)](https://gemnasium.com/kaorimatz/libproxy-ruby)
-
 Ruby bindings for [libproxy](https://github.com/libproxy/libproxy).
 
 ## Installation
